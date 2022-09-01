@@ -1,0 +1,126 @@
+
+:root {
+    --link-color: #09a8fd;
+    --link-visited-color: #09a8fd;
+    --code-background-color:#CCCCCC22;
+}
+
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-weight: lighter;
+        line-height: 2;
+}
+
+
+p { margin-bottom: 3rem; }
+.tight p { margin: 0; }
+
+.fade { opacity: 0.5; }
+
+.m-0  {margin: 0;}
+.mt-0 {margin-top:0;}
+.mt-5 {margin-top: 5rem;}
+.mb-0 {margin-bottom: 0;}
+.mb-5 {margin-bottom: 5rem;}
+.me-2 {margin-right:2rem;}
+
+
+li h4 {margin: 0; }
+
+.menu {
+    display:none;
+}
+
+.gradient {
+    background: radial-gradient(circle farthest-corner at top left, #BFBBB4 0%, #828282 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    font-size: 2rem;
+    line-height: 90%;
+    padding-bottom: 1rem;
+    padding-right: 0.1rem;
+    letter-spacing: -0.1rem;
+}
+.section {
+    min-height: 80vh;
+}
+
+.floaty {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: var(--code-background-color);
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    transform: rotate(-90deg);
+    display: inline-block;
+}
+
+@media only screen and (min-width: 600px)  {
+    .gradient {
+        font-size: 5rem;
+    }
+
+    body {
+        font-size: 130%;
+    }
+
+    .btt {
+        right: 5rem;
+        bottom: 5rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px)  {
+
+    .menu { 
+        display: inline-block;
+        position: fixed; 
+        top: 5rem;
+        left: 5rem; 
+    }
+    .menu a { display: block; }
+    .menu a.active { color: var(--text-color); }
+    .menu a.active:before { content: "- "; }
+
+
+    .row {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-column-gap: 2rem;
+        align-items: center;
+    }
+
+    picture img {
+        border-radius: 0.5rem;
+    }
+    
+}
+
+
+hr { border-style: dashed;}
+
+.leadline {
+    border-left: 1px dashed var(--border-color);
+    min-height: 10rem;
+    margin-top: 5rem;
+}
+
+.definition-box {
+    background-color: bisque;
+    padding: 2rem;
+    color: #A26A2E;
+    border-radius: 0.5rem;
+    font-style: italic;
+    line-height: 1.5;
+    border-left: 1rem solid peru;
+    font-weight: normal;
+}
